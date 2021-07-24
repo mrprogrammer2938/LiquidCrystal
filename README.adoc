@@ -11,7 +11,7 @@ This library allows an Arduino board to control liquid crystal displays (LCDs) b
 
 For more information about this library please visit us at
 
-[LiquidCrystal](https://www.arduino.cc/en/Reference/{repository-name})
+https://www.arduino.cc/en/Reference/{repository-name}
 
 == License ==
 
