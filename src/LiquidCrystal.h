@@ -68,6 +68,7 @@ public:
   void display();
   void noBlink();
   void blink();
+  void delay();
   void noCursor();
   void cursor();
   void scrollDisplayLeft();
@@ -81,6 +82,7 @@ public:
   void createChar(uint8_t, uint8_t[]);
   void setCursor(uint8_t, uint8_t); 
   virtual size_t write(uint8_t);
+  void cls(int beg_1, int beg_2, int beg_3);
   void command(uint8_t);
   
   using Print::write;
