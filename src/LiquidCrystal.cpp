@@ -4,7 +4,11 @@
 #include <string.h>
 #include <inttypes.h>
 #include "Arduino.h"
-
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
 // When the display powers up, it is configured as follows:
 //
 // 1. Display clear
