@@ -275,6 +275,12 @@ void LiquidCrystal::createChar(uint8_t location, uint8_t charmap[]) {
 inline void LiquidCrystal::command(uint8_t value) {
   send(value, LOW);
 }
+void LiquidCrystal::cls(int beg_1, int beg_2, int beg_3) {
+  lcd.begin(beg_1,beg_2,beg_3); clear();
+}
+void LiquidCrystal::delay(int time_set) {
+  sleep(time_set);
+}
 
 inline size_t LiquidCrystal::write(uint8_t value) {
   send(value, HIGH);
